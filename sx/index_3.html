@@ -1,0 +1,154 @@
+<!--
+	版本：三
+	较前一个的修改：导航条点击的颜色从黑色变为蓝色
+	解决的问题：1.一直无法修改导航条的active的颜色，点击第一下变成黑色，第二下又变成蓝色。最后发现，是因为<li></li><a></a>被设置为可下拉的状态
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		 <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link href="css/bootstrap.min.css" rel="stylesheet">
+    	<link href="css/my-custom.css" rel="stylesheet"/>
+    	<script type="application/javascript" src="js/jquery.min.js"></script>
+    	<script type="application/javascript" src="js/bootstrap.min.js"></script>
+		<title></title>
+		<style>
+			body{
+				background: #2e488d;
+			}
+			h4{
+				color: #eaedf0;
+				font-size: 20px;
+				margin-left: 10px;
+			}
+			#brand{
+				width: 45px;
+				height: 45px;
+				border-radius: 30px;
+				margin-top: -12px;
+			}
+			#i_nav{
+				color: white;
+				font-size: 20px;
+				margin-top: 10px;
+			}
+			#title{
+				font-size: 50px;
+				color: #eeeff2;
+				margin-top: 100px;
+				letter-spacing:8px;
+				
+			}
+			
+			#stitle{
+				font-size: 16px;
+				color: #eeeff2;
+			}
+			#btnground{
+				margin-top: 20px;
+				font-size: 20px;
+			}
+			#btn1{
+				list-style: none;
+				text-align: center;
+				line-height: 40px;
+				width: 130px;
+				border-radius:20px;
+				background: #839bbf;
+				margin-bottom: 20px;
+				
+			}
+			#btn2{
+				list-style: none;
+				font-size: 24px;
+				text-align: center;
+				line-height: 50px;				
+				width: 180px;
+				border-radius:25px;
+				background: #746f86;
+				
+			}
+			@media screen and (min-width: 768px) {
+    			#title{ 
+    				font-size: 100px;
+    			}
+				#btn1,#btn2{
+					width: 300px;
+					line-height: 70px;
+					font-size: 50px;
+					margin-left: 700px;
+				}
+				#i_nav{
+					width: 300px;
+				}
+				.nav li{
+					border-radius:50px;
+				}
+    		}
+    		
+		</style>
+		<script>
+		</script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default  navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+            	
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                 <a class="navbar-brand">
+    				<img alt="Brand" src="img/ship_1.png" id="brand" />
+    			</a>
+                <p id="i_nav"> 远洋渔业生产管理</p>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#"  role="button" ><span class="glyphicon glyphicon-tree-deciduous"></span> 公司风采</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" role="button"><span class="glyphicon glyphicon-map-marker"></span> 远洋渔业生产地理信息</a>     
+                    </li>
+                    <li>
+                        <a href="#" role="button"><span class="glyphicon glyphicon-th"></span> 生产数据表格</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" role="button"><span></span><span class="glyphicon glyphicon-signal"></span>  曲线分析</a>
+                       
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="contact.html"  role="button" ><span class="glyphicon glyphicon-user">个人中心</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+		<div class="container">
+			<div class="row">
+				<p id="title" class="col-xs-12 col-xs-offset-1"><strong>广东顺欣渔业集团</strong></p>
+			</div>
+			<div class="row">
+				<p id="stitle" class="col-xs-10 col-xs-offset-1"><em>集海洋捕捞、水产养殖、冷冻加工和科研开发于一体的民营企业</em></p>
+			</div>
+		</div>
+
+		<!--自定义按钮样式-->
+		<ul id="btnground">
+			<li id="btn1"><a href="contact.html">Contact us</a></li>
+			<li id="btn2"><a href="cultural.html">Learn more</a></li>
+		</ul>
+        
+	</body>
+</html>

@@ -1,0 +1,20 @@
+.navbar-default{
+	background: #2e488d;
+}
+/*.navbar a{
+    color:white;
+}*/
+/*改变导航的字体 变为白色*/
+.navbar-nav>li>a {
+ color : white !important;
+}
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:visited,
+.navbar .nav > li > a:active {
+    background: #839bbf;
+    border-radius: 15px;
+}
+
+/*.navbar a{
+  color: white 
+}*/

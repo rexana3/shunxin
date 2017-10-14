@@ -5,117 +5,131 @@
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
     	<link href="css/bootstrap.min.css" rel="stylesheet">
+    	<link href="css/my-custom.css" rel="stylesheet"/>
     	<script type="application/javascript" src="js/jquery.min.js"></script>
     	<script type="application/javascript" src="js/bootstrap.min.js"></script>
-    	<!--<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>-->
-   		<!--<script src="js/bootstrap.min.js"></script>-->
 		<title></title>
 		<style>
 			body{
 				background: #2e488d;
 			}
+			h4{
+				color: #eaedf0;
+				font-size: 20px;
+				margin-left: 10px;
+			}
+			#brand{
+				width: 45px;
+				height: 45px;
+				border-radius: 30px;
+				margin-top: -12px;
+			}
+			#i_nav{
+				color: white;
+				font-size: 20px;
+				margin-top: 10px;
+			}
 			#title{
 				font-size: 50px;
 				color: #eeeff2;
-				margin-top: 70px;
+				margin-top: 100px;
 				letter-spacing:8px;
 				
 			}
+			
 			#stitle{
 				font-size: 16px;
 				color: #eeeff2;
-
 			}
 			#btnground{
 				margin-top: 20px;
-
 				font-size: 20px;
-				color: #e0e6ef;
-				
 			}
 			#btn1{
 				list-style: none;
 				text-align: center;
 				line-height: 40px;
-				width: 40%;
+				width: 130px;
 				border-radius:20px;
 				background: #839bbf;
-				margin-bottom: 20px;;
+				margin-bottom: 20px;
+				
 			}
 			#btn2{
 				list-style: none;
 				font-size: 24px;
 				text-align: center;
-				line-height: 40px;				
-				width: 50%;
-				border-radius:20px;
+				line-height: 50px;				
+				width: 180px;
+				border-radius:25px;
 				background: #746f86;
+				
 			}
+			@media screen and (min-width: 768px) {
+    			#title{ 
+    				font-size: 100px;
+    			}
+				#btn1,#btn2{
+					width: 300px;
+					line-height: 70px;
+					font-size: 50px;
+					margin-left: 700px;
+				}
+				#i_nav{
+					width: 300px;
+				}
+				.nav li{
+					border-radius:50px;
+				}
+    		}
+    		
 		</style>
+		<script>
+		</script>
 	</head>
 	<body>
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-2">
-					<br />
-					<img src="img/ship_1.png"  class="img-responsive img-circle"/>
-				</div>
-				<div class="col-xs-7 col-xs-offset-1 col-xs-pull-2">
-					<br />
-					<h4>远洋渔业生产管理</h4>
-				</div>
-				<!--<div class="dropdown">
-					<br />
-					<button type="button" class="btn btn-primary" data-toggle="dropdown">
-						<span class="glyphicon glyphicon-align-left"></span>
-					</button>						
-					<ul class="dropdown-menu  nav nav-pills nav-stacked">
-						<li>
-							<a href="#">
-								<span class="glyphicon glyphicon-home"></span>
-								首页
-							</a>	
-						</li>
-						<li>
-							<a href="#">
-						    	<span class="glyphicon glyphicon-globe"></span>
-								地理信息
-							</a>				
-						</li>
-						<li>
-							<a href="#">
-								<span class="glyphicon glyphicon-book"></span>
-								鱼类信息
-							</a>	
-						</li>
-						<li>
-							<a href="#">
-								<span class="glyphicon glyphicon-signal"></span>
-								表格资料
-							</a>	
-						</li>
-					</ul>
-				</div>-->
+		<nav class="navbar navbar-default  navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+            	
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                 <a class="navbar-brand">
+    				<img alt="Brand" src="img/ship_1.png" id="brand" />
+    			</a>
+                <p id="i_nav"> 远洋渔业生产管理</p>
+            </div>
 
-					<!--<button type="button" class="btn btn-primary" data-toggle="dropdown">-->
-						<!--<span class="glyphicon glyphicon-align-left"></span>-->
-					<!--</button>-->						
-					<ul class=" nav nav-tabs">
-						<li>
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-align-left"></span></a>
-							
-							<ul class="dropdown dropdown-menu dropdown-menu-right ">
-								<li role="separator" class="divider"><a href="#"><span class="glyphicon glyphicon-home"></span>首页</a></li>											
-								<li><a href="#"><span class="glyphicon glyphicon-globe"></span>地理信息</a></li>																	    																													
-								<li><a href="#"><span class="glyphicon glyphicon-book"></span>鱼类信息</a>	</li>
-								<li><a href="#"><span class="glyphicon glyphicon-signal"></span>表格资料</a>	</li>								
-							</ul>
-						</li>
-						
-					</ul>
-				</div>
-			</div>
-		</div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#"  role="button" ><span class="glyphicon glyphicon-tree-deciduous"></span> 公司风采</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" role="button"><span class="glyphicon glyphicon-map-marker"></span> 远洋渔业生产地理信息</a>     
+                    </li>
+                    <li>
+                        <a href="#" role="button"><span class="glyphicon glyphicon-th"></span> 生产数据表格</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" role="button"><span></span><span class="glyphicon glyphicon-signal"></span>  曲线分析</a>
+                       
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="contact.html"  role="button" ><span class="glyphicon glyphicon-user">个人中心</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 		<div class="container">
 			<div class="row">
 				<p id="title" class="col-xs-12 col-xs-offset-1"><strong>广东顺欣渔业集团</strong></p>
@@ -124,35 +138,12 @@
 				<p id="stitle" class="col-xs-10 col-xs-offset-1"><em>集海洋捕捞、水产养殖、冷冻加工和科研开发于一体的民营企业</em></p>
 			</div>
 		</div>
-		<!--按钮样式-->
-		<!--<div class="container " id="btnground">
-			<div class="row">
-				<button type="button" class="btn btn-info col-xs-5 col-xs-offset-1">联系我们</button>
-			</div>	
-			<br />
-			<div class="row">
-				<button type="button" class="btn btn-info btn-info col-xs-5 col-xs-offset-1">了解更多</button>
-			</div>	
-		</div>-->
-		<!--<div class="container " id="btnground">
-			<div class="row">
-				<ul class="pager col-xs-6 ">
-					<li><a href="#">contact us</a></li>
-				</ul>
-			</div>
-			<div class="row">
-				<ul class="pager col-xs-6">
-					<li><a href="#">learn more</a></li>
-				</ul>
-			</div>
 
-		</div>-->
 		<!--自定义按钮样式-->
 		<ul id="btnground">
-			<li id="btn1">Contact us</li>
-			<li id="btn2">Learn more</li>
-			
+			<li id="btn1"><a href="contact.html">Contact us</a></li>
+			<li id="btn2"><a href="cultural.html">Learn more</a></li>
 		</ul>
-
+        
 	</body>
 </html>
